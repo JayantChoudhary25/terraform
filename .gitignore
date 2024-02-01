@@ -1,8 +1,8 @@
 # Local .terraform directories
 **/.terraform/*
-
+.terraform
 # .tfstate files
-*.tfstate
+# *.tfstate
 *.tfstate.*
 
 # Crash log files
@@ -32,14 +32,19 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-# Ignore large files
-*.tfstate
-*.tfstate.backup
-*.tfvars
-*.tfplan
 
-# Ignore directories used by Terraform
-.terraform/
+.DS_Store
 
-# Ignore .gitignore itself
-!.gitignore
+
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# Webpack directories
+.webpack
+
+#coverage directories
+coverage
